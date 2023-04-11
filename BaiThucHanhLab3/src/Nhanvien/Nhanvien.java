@@ -1,6 +1,6 @@
+package Nhanvien;
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
 
 public class Nhanvien{
     //nhap cac thuoc tinh
@@ -14,7 +14,7 @@ public class Nhanvien{
     //nhap cac phuong thuc
 public void nhapThongTin(){
    Scanner sc = new Scanner(System.in);
-   System.out.println("Nhap ho ten nhan vien: ");
+   System.out.println("Nhap thong tin nhan vien: ");
    hotennv = sc.nextLine();
    System.out.println("Nhap tuoi: ");
    tuoi = sc.nextInt();
