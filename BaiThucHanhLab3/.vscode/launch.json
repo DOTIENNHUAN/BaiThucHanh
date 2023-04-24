@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Quanlidanhba",
+            "request": "launch",
+            "mainClass": "DanhBa.Quanlidanhba",
+            "projectName": "BaiThucHanhLab3_f17b9fcb"
+        },
+        {
+            "type": "java",
             "name": "Bai2",
             "request": "launch",
             "mainClass": "Bai2",

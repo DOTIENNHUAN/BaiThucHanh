@@ -2,17 +2,20 @@ package HinhHoc;
 import java.util.Scanner;
 
 public class Hinhtron extends Hinhhoc{
-    public float bankinh;
     
     public Hinhtron(){
         ten = "Hinh tron";
     }
+    
+    private final float PI = 3.14f;
+    private float bankinh;
 
-    public void nhapBanKinh(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ban kinh = ");
-        bankinh = sc.nextFloat();
-       
+    public float getBanKinh(){
+        return bankinh;
+    }
+
+    public void setBanKinh(float r){
+        this.bankinh = r;
     }
 
     public void tinhChuVi(){

@@ -19,7 +19,7 @@ public static void main(String[] args){
     //Lop Hinhtron
     Hinhtron ht = new Hinhtron();
     ht.xuatTen();
-    ht.nhapBanKinh();
+    ht.setBanKinh(5);
     ht.tinhChuVi();
     ht.tinhDienTich();
     ht.inChuVi();

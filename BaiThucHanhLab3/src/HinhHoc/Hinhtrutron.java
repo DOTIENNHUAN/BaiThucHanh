@@ -9,7 +9,6 @@ public class Hinhtrutron extends Hinhtron{
     }
 
     public void nhapChieuCao(){
-        nhapBanKinh();
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Chieu cao = ");
