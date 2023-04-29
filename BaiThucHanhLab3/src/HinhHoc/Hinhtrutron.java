@@ -5,19 +5,26 @@ public class Hinhtrutron extends Hinhtron{
     public float chieucao;
 
     public Hinhtrutron(){
-        ten = "Hinh tru tron";
+        super.setTen("Hinh tru tron");
     }
 
-    public void nhapChieuCao(){
+    public float getChieuCao(){
+        return chieucao;
+    }
 
-        Scanner sc = new Scanner(System.in);
+    public void setChieuCao(float chieucao){
+        this.chieucao = chieucao;
+    }
+
+    public void nhapChieuCao(Scanner sc){
         System.out.println("Chieu cao = ");
-        chieucao = sc.nextFloat();
+        setChieuCao(sc.nextFloat());
        
     }
 
-    public void tinhTheTich(){
+    public void tinhTheTich(Scanner sc){
         tinhDienTich();
         thetich = dientich * chieucao;
+        
     }
 }

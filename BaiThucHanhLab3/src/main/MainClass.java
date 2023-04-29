@@ -19,7 +19,7 @@ public static void main(String[] args){
     //Lop Hinhtron
     Hinhtron ht = new Hinhtron();
     ht.xuatTen();
-    ht.setBanKinh(5);
+    ht.nhapBanKinh();
     ht.tinhChuVi();
     ht.tinhDienTich();
     ht.inChuVi();
@@ -29,9 +29,8 @@ public static void main(String[] args){
     case 2:
     //Lop Hinhtrutron
     Hinhtrutron htt = new Hinhtrutron();
+    htt.nhapChieuCao(sc);
     htt.xuatTen();
-    htt.nhapChieuCao();
-    htt.tinhTheTich();
     htt.inTheTich();
     break;
 
@@ -39,8 +38,8 @@ public static void main(String[] args){
     //Lop Hinhchunhat
     Hinhchunhat hcn = new Hinhchunhat();
     hcn.xuatTen();
-    hcn.nhapChieuDai();
-    hcn.nhapChieuRong();
+    hcn.nhapChieuDai(sc);
+    hcn.nhapChieuRong(sc);
     hcn.tinhChuVi();
     hcn.tinhDienTich();
     hcn.inChuVi();
@@ -51,7 +50,7 @@ public static void main(String[] args){
     //Lop Hinhvuong
     Hinhvuong hv = new Hinhvuong();
     hv.xuatTen();
-    hv.nhapCanh();
+    hv.nhapCanh(sc);   
     hv.tinhChuVi();
     hv.tinhDienTich();
     hv.inChuVi();

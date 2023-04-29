@@ -5,13 +5,12 @@ import java.util.Scanner;
 public class Hinhvuong extends Hinhchunhat{
     
     public Hinhvuong(){
-        ten = "Hinh vuong";
+       super.setTen("Hinh vuong");
     }
 
-    public void nhapCanh(){
-        Scanner sc = new Scanner(System.in);
+    public void nhapCanh(Scanner sc){
         System.out.println("Canh = ");
-        dai = rong = sc.nextFloat();
-        sc.close();
+        super.setDai(sc.nextFloat());
+        super.setRong(super.getDai());
     }
 }

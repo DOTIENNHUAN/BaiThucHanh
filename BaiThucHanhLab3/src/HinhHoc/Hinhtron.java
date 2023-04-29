@@ -3,27 +3,33 @@ import java.util.Scanner;
 
 public class Hinhtron extends Hinhhoc{
     
-    public Hinhtron(){
-        ten = "Hinh tron";
-    }
-    
-    private final float PI = 3.14f;
     private float bankinh;
+
+    public Hinhtron(){
+        super.setTen("Hinh tron");
+    }
 
     public float getBanKinh(){
         return bankinh;
     }
 
-    public void setBanKinh(float r){
-        this.bankinh = r;
+    public void setBanKinh(float bankinh){
+        this.bankinh = bankinh;
     }
 
+    public void nhapBanKinh(Scanner sc){
+        System.out.println("Ban kinh = ");
+        setBanKinh(sc.nextFloat());
+    }
+    
     public void tinhChuVi(){
-        chuvi = 2 * PI * bankinh;
+        chuvi = 2 * bankinh * super.getPI();
+        super.setChuVi(chuvi);
     }
 
     public void tinhDienTich(){
-        dientich = PI * bankinh * bankinh;
+        dientich =super.getPI() * bankinh * bankinh;
+        super.setDienTich(dientich);
     }
 }
 
